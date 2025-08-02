@@ -1,0 +1,545 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.brand-logo h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a, .contact-btn {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.main-nav a:hover, .contact-btn:hover {
+    color: #000;
+    transform: translateY(-3px);
+}
+
+.contact-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #555;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('BACKGROUND IMAGE.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 60px;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.cta-button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e5533d;
+    transform: scale(1.05);
+}
+
+/* Food Categories Section */
+.food-category {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.category-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.food-item {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.food-item h3 {
+    font-size: 1.2rem;
+}
+
+/* Price Tag and Add to Cart Button Styles */
+.price-tag {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background: #ff6347;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.add-to-cart-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.add-to-cart-btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #f4f4f4;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-info p {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: #f4f4f4;
+    font-size: 2rem; /* Increased icon size */
+    margin: 0 0.75rem; /* Adjusted spacing for larger icons */
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Ensures transform on hover works correctly */
+}
+
+.social-links a:hover {
+    color: #ff6347;
+    transform: translateY(-3px);
+}
+
+/* Cart Sidebar Styles */
+.cart-icon-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon {
+    font-size: 2rem;
+    color: #333;
+    z-index: 1100;
+}
+
+.cart-item-count {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: #ff6347;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.cart-item-count.visible {
+    transform: scale(1);
+}
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -4px 0 10px rgba(0,0,0,0.1);
+    z-index: 1200;
+    transition: right 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-sidebar.active {
+    right: 0;
+}
+
+.cart-title {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.cart-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.cart-content {
+    flex-grow: 1;
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 80px 1fr auto 30px;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cart-item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item-remove {
+    font-size: 1.5rem;
+    color: #ff6347;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cart-item-remove:hover {
+    color: #cc4f38;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart-item-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.cart-item-price {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.quantity-btn {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #333;
+    background-color: #eee;
+    border-radius: 50%;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #ddd;
+}
+
+.cart-footer {
+    padding: 1.5rem;
+    border-top: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.cart-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-checkout,
+.btn-cancel {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff6347; /* Matches your CTA button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-checkout:hover {
+    background-color: #e5533d; /* Darker shade on hover */
+}
+
+.btn-cancel {
+    background-color: #6c757d; /* A neutral grey for secondary action */
+}
+
+.btn-cancel:hover {
+    background-color: #5a6268;
+}
+/* Hamburger & Mobile Nav */
+.nav-toggle, .nav-close, .contact-btn-mobile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70vw;
+        height: 100vh;
+        background: #fff;
+        box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+        padding: 2rem 1.5rem;
+        transition: right 0.3s ease;
+        z-index: 1050;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-nav.active {
+        right: 0;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .nav-toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #333;
+        z-index: 1100;
+    }
+    .cart-icon-wrapper {
+        order: -1;
+        margin-right: 1rem;
+    }
+    .cart-icon {
+        order: -1; /* Move cart icon before hamburger on small screens */
+        margin-right: 1rem;
+    }
+    .nav-close {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #333;
+        z-index: 1100;
+    }
+    .main-nav:not(.active) .nav-close,
+    .main-nav.active + .nav-toggle {
+        display: none;
+    }
+    .header-container {
+        padding: 0 1rem;
+    }
+    .contact-btn {
+        display: none;
+    }
+    .contact-btn-mobile {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 1rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .contact-btn-mobile:hover {
+        background-color: #555;
+        transform: translateY(-3px);
+    }
+}
+
+@media (min-width: 901px) {
+    .nav-toggle,
+    .nav-close,
+    .contact-btn-mobile {
+        display: none !important;
+    }
+    .main-nav {
+        position: static;
+        height: auto;
+        width: auto;
+        background: none;
+        box-shadow: none;
+        transition: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .main-nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .main-nav.active {
+        right: auto;
+    }
+}
